@@ -14,3 +14,6 @@
 $app->get('/', function () use ($app) {
     return $app->welcome();
 });
+
+$app->get('/status', 'StatusController@index');
+$app->get('/lists/count', 'StatusController@lists');
